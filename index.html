@@ -25,9 +25,14 @@
     </div>
 
     <form action="https://sheetdb.io/api/v1/m9k248c4o9c9j" method="POST" id="sheetdb-form">
-        Name1: <input name="data[1]" list ="productName">
+        <div class=" m-1">
+        Activity: <input name="data[Activity]" >   
+        
         Date: <input name="data[date]" type="date" id="date" >
-        Activity: <input name="data[Activity]" >
+        </div>
+        <div id="name" class="m-1">
+        Name1: <input name="data[1]" list ="productName">
+        </div>
         <button type="submit">Submit</button>
     </form>
 
@@ -1680,7 +1685,7 @@
             newperson.setAttribute("name", "data["+id+"]");
             newperson.setAttribute("list", "productName");
             row.appendChild(newperson);
-            document.getElementById("sheetdb-form").appendChild(row);
+            document.getElementById("name").appendChild(row);
         }
 
     </script>
